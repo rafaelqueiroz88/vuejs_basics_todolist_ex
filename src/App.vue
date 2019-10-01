@@ -1,15 +1,16 @@
 <template>
   <div id="app">
     <Menu />
+    <!-- Neste caso, o ="todos" pega o valor declarado em data() {} -->
     <Todos v-bind:todos="todos"/>
   </div>
 </template>
 
 <script>
-  // Voltar em: https://youtu.be/Wy9q22isx3U?t=1141
+  // Voltar em: https://youtu.be/Wy9q22isx3U?t=1510
 
-  import Todos from './components/Todos';
   import Menu from './components/Menu';
+  import Todos from './components/Todos';
 
   export default {
     name: 'app',
